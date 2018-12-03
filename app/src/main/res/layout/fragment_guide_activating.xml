@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/setup_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/activating_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/bind_activating_text_size"
+            android:layout_marginTop="113px"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/major_text_color"
+            android:fontFamily="zh-Hans"
+            android:text="@string/guide_activating_text"/>
+        <TextView
+            android:id="@+id/activating_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/bind_activating_text_size"
+            android:layout_marginTop="180px"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/major_text_color"
+            android:fontFamily="zh-Hans"
+            android:text="@string/activing_prompt"/>
+
+        <ImageView
+            android:id="@+id/activating_animation"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activating_text2"
+            android:layout_marginTop="30px" />
+
+        <!--<ProgressBar-->
+            <!--android:id="@+id/progressbar"-->
+            <!--android:layout_width="354px"-->
+            <!--android:layout_height="4px"-->
+            <!--android:layout_below="@+id/activating_text"-->
+            <!--android:layout_marginTop="64px"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--style="@style/progress_bar"-->
+            <!--android:indeterminate="true"/>-->
+        <TextView
+            android:id="@+id/activating_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20px"
+            android:layout_marginTop="370px"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/major_text_color"
+            android:fontFamily="zh-Hans"
+            android:text="@string/activing_prompt"/>
+        <!--true value for indeterminate-->
+    </RelativeLayout>
+</RelativeLayout>

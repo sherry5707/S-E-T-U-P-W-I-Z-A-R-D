@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    
+    <color name="white">#FFFFFF</color>
+    <color name="wifi_scanner_bg">#2C4EEF</color>
+
+    <color name="action_button_normal">#0088FF</color>
+    <color name="action_button_pressed">#660088FF</color>
+    <color name="list_item_normal">@android:color/transparent</color>
+    <color name="list_item_pressed">#0D000000</color>
+    <color name="wifi_scan_normal">#80FFFFFF</color>
+    <color name="wifi_scan_pressed">#66999999</color>
+    <color name="colorGray">#FF999999</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="background">#0F1B24</color>
+    <color name="toast_background">#F20F1B24</color>
+    <color name="major_text_color">#000000</color>
+    <color name="minor_text_color">#4A4A4A</color>
+
+    <color name="cutting_line">#4A4A4A</color>
+    <color name="progress_bar">#50E3C2</color>
+
+    <color name="wifi_connecting">#60CBF2</color>
+    <color name="wifi_pwd_wrong">#F35568</color>
+</resources>

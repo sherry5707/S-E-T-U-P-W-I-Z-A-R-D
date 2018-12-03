@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">开机向导</string>
+    <string name="title_activity_her_settings">HerSetupWizardActivity</string>
+    <string name="wifi_auth_tips">请输入 “%1$s” 的密码</string>
+    <string name="wifi_delete_title">确定删除 “%1$s” 吗？</string>
+    <string name="wifi_delete_tips">删除后网络连接会中断</string>
+    <string name="connect_succeed">连接成功</string>
+    <string name="connect_failed">连接失败\n请重试</string>
+    <string name="wifi_scan_timeout_tips">扫描超时\n请重试</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="connect">连接</string>
+    <string name="scan">扫描</string>
+    <string name="wifi_password_min_tips">密码至少8位</string>
+    <string name="links">Links</string>
+    <string name="bind_success">"绑定成功"</string>
+    <string name="bl_connected">已连接</string>
+    <string name="bl_disconnected">未连接</string>
+
+    <string name="next">"下一步"</string>
+
+    <string name="guide_activating_text">"激活中..."</string>
+    <string name="guide_activate_fail">"很抱歉，激活失败"</string>
+    <string name="guide_activate_tryagain_tip">"请再试一次"</string>
+    <string name="guide_activate_fail_tip">"友情提示：\n您也可以拨打客服电话4000-123-917\n告知设备序列号：%1$s 帮助解决</string>
+    <string name="guide_rebind_info">"您已解除与腾讯云小微的绑定，设备无法正常使用，请绑定云小微"</string>
+    <string name="guide_rebind">"绑定云小微"</string>
+    <string name="guide_bind_tips">请使用腾讯云小微扫描二维码绑定</string>
+
+    <string name="try_again">"再试一次"</string>
+    <string name="go_back">返回</string>
+
+    <string name="wifi_connected">"已连接"</string>
+    <string name="wifi_not_connected">"未连接"</string>
+    <string name="wifi_connecting">"连接中..."</string>
+    <string name="wifi_not_scan">"点击搜索可用的WLAN"</string>
+    <string name="wifi_scanning">"正在搜索可用的WLAN..."</string>
+    <string name="wifi_password_done">"完成"</string>
+    <string name="wifi_password_tip">"请输入WLAN密码"</string>
+    <string name="wifi_wrong_password">密码错误</string>
+    <string name="wifi_invalid_password">"您输入的密码位数太短"</string>
+    <string name="wifi_password_verifying">识别中...</string>
+    <string name="wifi_password_verified">当前WLAN不可接入，请尝试连接其他WLAN</string>
+    <string name="wechat_activing">正在帮您激活微信公众号</string>
+    <string name="xiaowei_activing">正在帮您激活腾讯云小微</string>
+    <string name="activing_prompt">请稍等...</string>
+    <string name="xiaowei_activing_prompt3">绑定腾讯云小微，可以体验智能语音服务</string>
+    <string name="wechat_activing_prompt3">绑定微信公众号轻松发布作业、提醒、随时跟孩子开启聊天</string>
+    <string name="time_lingchen">凌晨</string>
+    <string name="time_shangwu">上午</string>
+    <string name="time_xiawu">下午</string>
+    <string name="time_wanshang">晚上</string>
+    <string name="unbind_tts_content">您已成功解绑腾讯云小微，设备无法正常使用了呢，请用手机绑定云小微</string>
+</resources>

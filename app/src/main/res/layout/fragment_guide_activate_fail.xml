@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/setup_bg">
+
+    <LinearLayout
+        android:id="@+id/activate_fail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116px"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/exclaim_icon"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3px"
+            android:includeFontPadding="false"
+            android:textSize="@dimen/bind_fail_info_size"
+            android:textColor="@color/major_text_color"
+            android:text="@string/guide_activate_fail"
+            android:fontFamily="zh-Hans"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/try_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/activate_fail"
+        android:background="@drawable/button_background"
+        android:textSize="@dimen/bind_try_again_size"
+        android:textColor="@color/white"
+        android:fontFamily="zh-Hans"
+        android:includeFontPadding="false"
+        android:text="@string/try_again"
+        android:layout_marginTop="28px"/>
+
+    <TextView
+        android:id="@+id/activate_fail_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/bind_fail_tip_size"
+        android:textColor="@color/minor_text_color"
+        android:fontFamily="zh-Hans"
+        android:includeFontPadding="false"
+        android:text="@string/guide_activate_fail_tip"
+        android:lineSpacingExtra="7px"
+        android:layout_marginBottom="114px"/>
+
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:src="@drawable/go_back_normal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="24px"
+        android:layout_marginLeft="24px"/>
+</RelativeLayout>

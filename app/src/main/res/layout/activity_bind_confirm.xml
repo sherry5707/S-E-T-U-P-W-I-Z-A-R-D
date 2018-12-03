@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bind_confirm_bg">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="131px"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="绑定腾讯云小微可以使用本设备的语音服务，开启更有趣的交互体验"
+            android:textSize="22px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="51px"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="184px"
+                android:layout_height="57px"
+                android:layout_gravity="center_vertical"
+                android:onClick="bindButtonClicked"
+                android:text="立即绑定"
+                android:textColor="#fff"
+                android:background="@drawable/shape_confirm"
+                android:textSize="22px" />
+
+            <Button
+                android:layout_width="184px"
+                android:layout_height="57px"
+                android:layout_marginLeft="26px"
+                android:layout_gravity="center_vertical"
+                android:onClick="cancelButtonClicked"
+                android:text="稍后"
+                android:background="@drawable/shape_confirm"
+                android:textColor="#fff"
+                android:textSize="22px" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

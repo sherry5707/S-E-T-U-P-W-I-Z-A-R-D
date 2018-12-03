@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/pull_down_indicator"
+        android:layout_width="121px"
+        android:layout_height="14px"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/pull_down_indicator" />
+
+    <RelativeLayout
+        android:id="@+id/gift_title"
+        android:layout_width="wrap_content"
+        android:layout_height="102px"
+        android:layout_marginTop="8px"
+        android:onClick="leftUpButtonClicked">
+
+        <ImageView
+            android:layout_width="245px"
+            android:layout_height="102px"
+            android:background="@drawable/left_up_selector" />
+
+        <ImageView
+            android:id="@+id/gift_star"
+            android:layout_width="54px"
+            android:layout_height="54px"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="20px"
+            android:src="@drawable/star_img" />
+
+        <TextView
+            android:id="@+id/all_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4px"
+            android:layout_marginTop="24px"
+            android:layout_toRightOf="@+id/gift_star"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="34px" />
+    </RelativeLayout>
+
+    <!--替换一下蓝色的图片，设置background即可-->
+    <RelativeLayout
+        android:id="@+id/time_layout"
+        android:layout_width="336px"
+        android:layout_height="336px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30px"
+        android:background="@drawable/midle_clock"
+        android:onClick="middleButtonClicked">
+
+        <TextView
+            android:id="@+id/time_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:includeFontPadding="false"
+            android:text="7:00"
+            android:textColor="#FFFFFF"
+            android:textSize="86px" />
+
+        <!--  <View
+              android:id="@+id/view"
+              android:layout_width="152px"
+              android:layout_height="2px"
+              android:layout_above="@+id/time_text_view"
+              android:layout_centerHorizontal="true"
+              android:background="#50CFFF" />-->
+
+        <TextView
+            android:id="@+id/am_pm_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/time_text_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="9px"
+            android:includeFontPadding="false"
+            android:textColor="#FFFFFF"
+            android:textSize="22px" />
+    </RelativeLayout>
+
+    <!--右上角图片-->
+    <ImageView
+        android:id="@+id/yuyin_image"
+        android:layout_width="110px"
+        android:layout_height="110px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="12px"
+        android:onClick="rightUpButtonClicked"
+        android:src="@drawable/right_up_selector" />
+
+    <TextView
+        android:id="@+id/yuyin_text"
+        android:layout_width="wrap_content"
+        android:layout_height="75px"
+        android:layout_marginTop="22px"
+        android:layout_toLeftOf="@+id/yuyin_image"
+        android:background="@drawable/bg_yuyin_tips"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:onClick="yuyinClicked"
+        android:paddingLeft="23px"
+        android:textColor="#3C434C"
+        android:textSize="26px" />
+
+<!--    <ImageView
+        android:id="@+id/img_pk"
+        android:layout_width="74px"
+        android:layout_height="74px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18px"
+        android:layout_marginTop="134px"
+        android:onClick="PKButtonClicked"
+        android:src="@drawable/img_pk" />
+
+    <ImageView
+        android:id="@+id/img_dialer"
+        android:layout_width="74px"
+        android:layout_height="74px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18px"
+        android:layout_marginTop="242px"
+        android:onClick="DialerButtonClicked"
+        android:src="@drawable/img_dialer" />-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="182px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18px"
+        android:layout_marginTop="134px"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_pk"
+            android:layout_width="74px"
+            android:layout_height="74px"
+            android:layout_alignParentRight="true"
+            android:onClick="PKButtonClicked"
+            android:src="@drawable/img_pk" />
+
+        <ImageView
+            android:id="@+id/img_dialer"
+            android:layout_width="74px"
+            android:layout_height="74px"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/img_pk"
+            android:layout_marginTop="34px"
+            android:visibility="gone"
+            android:onClick="DialerButtonClicked"
+            android:src="@drawable/img_dialer" />
+    </LinearLayout>
+
+
+    <!--<RelativeLayout
+        android:layout_width="482px"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/time_layout"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="18px"
+        android:layout_toLeftOf="@+id/yuyin_image"
+        android:onClick="yuyinClicked">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="22px"
+            android:src="@drawable/bg_yuyin" />
+
+        <TextView
+            android:id="@+id/yuyin_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="56px"
+            android:layout_marginTop="36px"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textSize="26px" />
+    </RelativeLayout>-->
+
+    <!--   &lt;!&ndash;音乐图片&ndash;&gt;
+       <ImageView
+           android:id="@+id/music_image"
+           android:layout_width="72px"
+           android:layout_height="72px"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="40px"
+           android:layout_marginTop="184px"
+           android:onClick="musicClicked"
+           android:src="@drawable/music" />-->
+
+    <FrameLayout
+        android:id="@+id/timer_frame_layout"
+        android:layout_width="72px"
+        android:layout_height="72px"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25px"
+        android:layout_marginTop="134px" />
+
+    <FrameLayout
+        android:id="@+id/media_frame_layout"
+        android:layout_width="72px"
+        android:layout_height="72px"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25px"
+        android:layout_marginTop="242px" />
+
+    <!--左下角图片-->
+    <ImageView
+        android:id="@+id/left_down_image"
+        android:layout_width="178px"
+        android:layout_height="155px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="leftDownButtonClicked" />
+
+    <!--右下角图片-->
+    <ImageView
+        android:id="@+id/right_down_image"
+        android:layout_width="178px"
+        android:layout_height="155px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8px"
+        android:onClick="rightDownButtonClicked" />
+
+    <ImageView
+        android:id="@+id/remind_image"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:src="@drawable/remind_clock"
+        android:visibility="gone" />
+</RelativeLayout>

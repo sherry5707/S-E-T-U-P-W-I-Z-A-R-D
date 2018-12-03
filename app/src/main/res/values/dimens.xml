@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bind_fail_info_size">36px</dimen>
+    <dimen name="bind_fail_tip_size">20px</dimen>
+    <dimen name="bind_try_again_size">24px</dimen>
+
+    <dimen name="bind_activating_text_size">36px</dimen>
+
+    <dimen name="bind_tip_text_size">36px</dimen>
+
+    <dimen name="rebind_tip_text_size">24px</dimen>
+    <dimen name="rebind_action_text_size">24px</dimen>
+
+    <dimen name="wifi_scan_text_size">36px</dimen>
+    <dimen name="wifi_device_name_size">36px</dimen>
+    <dimen name="wifi_device_status_size">36px</dimen>
+    <dimen name="wifi_password_done_size">24px</dimen>
+    <dimen name="wifi_password_text_size">36px</dimen>
+    <dimen name="wifi_next_text_size">40px</dimen>
+    <dimen name="wifi_connect_status_size">24px</dimen>
+
+    <dimen name="toast_info_size">24.62sp</dimen>
+
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/setup_bg"
+                android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="70px">
+        <ListView
+            android:id="@+id/wifi_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dip"
+            android:fadingEdge="none"
+            android:headerDividersEnabled="false"
+            android:overScrollMode="never"
+            android:scrollbars="none"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/wifi_button"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/wifi_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="630px"
+            android:gravity="center"
+            android:fontFamily="zh-Hans"
+            android:text="@string/next"
+            android:textStyle="bold"
+            android:textColor="@color/major_text_color"
+            android:textSize="@dimen/wifi_next_text_size"/>
+    </LinearLayout>
+</RelativeLayout>

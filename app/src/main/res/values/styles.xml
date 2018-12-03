@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="animation_translucent" parent="@android:style/Animation.Translucent">
+        <item name="android:windowEnterAnimation">@anim/fullscreen_enter</item>
+        <item name="android:windowExitAnimation">@anim/fullscreen_exit</item>
+    </style>
+
+    <style name="AppTheme" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/animation_translucent</item>
+    </style>
+
+    <style name="LauncherTheme" parent="@android:style/Theme.Holo.Wallpaper.NoTitleBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/animation_translucent</item>
+    </style>
+
+    <style name="Dialog_Transparent">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowOverscan">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="progress_bar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name = "android:indeterminateTint">@color/progress_bar</item>
+        <item name = "android:indeterminateTintMode">src_in</item>
+    </style>
+
+    <style name="FullscreenDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!--边框-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--半透明-->
+        <item name="android:windowNoTitle">true</item>
+        <!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--模糊-->
+
+        <item name="android:windowEnterAnimation">@anim/chatalertdlg_enter</item>
+        <item name="android:windowExitAnimation">@anim/chatalertdlg_exit</item>
+    </style>
+</resources>

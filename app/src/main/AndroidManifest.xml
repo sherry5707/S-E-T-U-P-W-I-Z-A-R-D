@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    coreApp="true"
+    package="com.kinstalk.her.setupwizard"
+    android:sharedUserId="android.uid.system">
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CONFIGURE_WIFI_DISPLAY" />
+    <uses-permission android:name="android.permission.SET_TIME" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+
+    <uses-permission android:name="com.kinstalk.her.settings.data.wifi.WifiIotProvider.READ" />
+    <uses-permission android:name="com.kinstalk.her.settings.data.wifi.WifiIotProvider.WRITE" />
+
+    <application
+        android:name=".HerSetupWizardApplication"
+        android:allowBackup="true"
+        android:directBootAware="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.kinstalk.her.setupwizard.glide.CustomGlideModule"
+            android:value="GlideModule" />
+
+        <activity
+            android:name=".view.activity.HerBootGuideActivity"
+            android:exported="true"
+            android:launchMode="singleInstance">
+            <intent-filter android:priority="6">
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".view.activity.HerBootGuideXiaoWeiActivity"
+            android:exported="true"
+            android:launchMode="singleInstance">
+            <intent-filter android:priority="9">
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </activity>
+
+        <!--<activity-->
+            <!--android:name=".allapp.AllAPPList"-->
+            <!--android:clearTaskOnLaunch="true"-->
+            <!--android:configChanges="keyboard|keyboardHidden|navigation"-->
+            <!--android:enabled="true"-->
+            <!--android:launchMode="singleTask"-->
+            <!--android:resizeableActivity="true"-->
+            <!--android:resumeWhilePausing="true"-->
+            <!--android:screenOrientation="nosensor"-->
+            <!--android:stateNotNeeded="true"-->
+            <!--android:taskAffinity=""-->
+            <!--android:theme="@style/LauncherTheme"-->
+            <!--android:windowSoftInputMode="adjustPan|stateUnchanged">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+                <!--<category android:name="android.intent.category.HOME" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+        <activity
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:name=".allapp.HomeVedioActivity">
+        </activity>
+        <activity
+            android:name=".view.activity.BindConfirmActivity"
+            android:exported="true"
+            android:screenOrientation="landscape"></activity>
+
+        <activity
+            android:name=".view.dialog.GuidePageDialog"
+            android:exported="true"
+            android:screenOrientation="landscape"></activity>
+
+        <receiver android:name=".data.wifi.WifiReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.SCAN_RESULTS" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+
+        <receiver android:name=".data.wifi.BootBroadcast">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.media.AUDIO_BECOMING_NOISY" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".data.receiver.BindActionReceiver">
+            <intent-filter>
+                <action android:name="com.kinstalk.action.assistkey" />
+                <action android:name="com.kinstalk.her.qchat.qrcode" />
+                <action android:name="com.kinstalk.her.qchat.bind_status" />
+                <action android:name="kinstalk.com.aicore.action.txsdk.bind_status" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="ly.count.android.sdk.ReferrerReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
